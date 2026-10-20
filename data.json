@@ -1,0 +1,258 @@
+{
+ "tasks": {
+  "g1": {
+   "pillar": 1,
+   "title": "Alignment and Foundation",
+   "description": "Set the foundation for career management: agree the strategy and governance guidelines, and map the stakeholders who must be involved.",
+   "prompt": "What should the career management strategy commit us to, and which stakeholders must be on board first?",
+   "deliverables": [
+    {
+     "t": "Career Management strategy and governance guidelines",
+     "done": false
+    },
+    {
+     "t": "Stakeholder engagement map",
+     "done": false
+    }
+   ],
+   "start": "2026-09-22",
+   "end": "2026-10-30",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "1"
+  },
+  "g2": {
+   "pillar": 1,
+   "title": "Design Career Possibilities",
+   "description": "Define the range of career moves open to employees and show them in a framework and visual career maps.",
+   "prompt": "What career paths should employees be able to see, including moves sideways and across functions?",
+   "deliverables": [
+    {
+     "t": "Career Possibilities Framework",
+     "done": false
+    },
+    {
+     "t": "Visual career maps",
+     "done": false
+    }
+   ],
+   "start": "2026-11-02",
+   "end": "2027-01-08",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "2"
+  },
+  "g3": {
+   "pillar": 1,
+   "title": "Introduce Formal Career Conversation Cycle",
+   "description": "Introduce a regular career conversation between employees and managers, with the guide, toolkit and training to support it.",
+   "prompt": "What should a good career conversation cover, and what support do managers need to hold one?",
+   "deliverables": [
+    {
+     "t": "Career conversation guide and toolkit",
+     "done": false
+    },
+    {
+     "t": "Career Development Training",
+     "done": false
+    }
+   ],
+   "start": "2027-01-11",
+   "end": "2027-03-05",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "3"
+  },
+  "g4": {
+   "pillar": 1,
+   "title": "Establish Stretch Assignment Program",
+   "description": "Set up a programme of stretch assignments, with clear governance guidelines.",
+   "prompt": "What kinds of stretch assignments could we offer, and how should people be chosen for them?",
+   "deliverables": [
+    {
+     "t": "Stretch Assignment Program governance guidelines",
+     "done": false
+    }
+   ],
+   "start": "2027-03-08",
+   "end": "2027-04-30",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "4"
+  },
+  "g5": {
+   "pillar": 1,
+   "title": "Introduce Career Advisory Service: enablement and communication",
+   "description": "Launch the Career Advisory Service and keep supporting it with enablement and communication. This is an ongoing task.",
+   "prompt": "How should we tell people about the service, and what help do they need to use it?",
+   "deliverables": [
+    {
+     "t": "Eligibility criteria",
+     "done": false
+    },
+    {
+     "t": "Nomination process",
+     "done": false
+    },
+    {
+     "t": "Project matching rules",
+     "done": false
+    }
+   ],
+   "start": "",
+   "end": "",
+   "ongoing": true,
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "icon": "5"
+  },
+  "g6": {
+   "pillar": 1,
+   "title": "Monitoring, Feedback and Continuous Improvement",
+   "description": "Collect feedback and keep improving the programme, supported by guides, FAQs and a career portal.",
+   "prompt": "How will we know the programme is working, and what should we change first?",
+   "deliverables": [
+    {
+     "t": "Guides, FAQs and career portal",
+     "done": false
+    }
+   ],
+   "start": "2027-05-08",
+   "end": "2027-06-11",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "6"
+  },
+  "s1": {
+   "pillar": 2,
+   "title": "Alignment and Foundation",
+   "description": "Set the foundation for succession management: agree the charter that governs it and identify the critical roles it covers.",
+   "prompt": "What should the succession management charter commit us to, and what makes a role critical here?",
+   "deliverables": [
+    {
+     "t": "Succession management charter",
+     "done": false
+    },
+    {
+     "t": "Critical roles",
+     "done": false
+    }
+   ],
+   "start": "2026-09-22",
+   "end": "2026-11-13",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "7"
+  },
+  "s2": {
+   "pillar": 2,
+   "title": "Apply the succession plan nomination procedure",
+   "description": "Put the nomination procedure into practice and produce the first list of nominees.",
+   "prompt": "Who should be able to nominate, and how do we keep nominations fair and confidential?",
+   "deliverables": [
+    {
+     "t": "Succession nominations procedure",
+     "done": false
+    },
+    {
+     "t": "List of nominees",
+     "done": false
+    }
+   ],
+   "start": "2026-11-16",
+   "end": "2026-12-25",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "8"
+  },
+  "s3": {
+   "pillar": 2,
+   "title": "Assessment and Talent Identification",
+   "description": "Assess the nominees and place the candidates on the 9-box grid.",
+   "prompt": "What evidence should we use to judge performance and potential, and who should review the results?",
+   "deliverables": [
+    {
+     "t": "Assessment result",
+     "done": false
+    },
+    {
+     "t": "Candidates mapping over the 9-box grid",
+     "done": false
+    }
+   ],
+   "start": "2026-12-28",
+   "end": "2027-02-19",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "9"
+  },
+  "s4": {
+   "pillar": 2,
+   "title": "Program Rollout and Track Delivery",
+   "description": "Roll out development for the identified talent, using a curriculum tailored to the leadership pipeline.",
+   "prompt": "Which development experiences would prepare our successors best, and what do they need first?",
+   "deliverables": [
+    {
+     "t": "Tailored leadership development curriculum and solutions",
+     "done": false
+    }
+   ],
+   "start": "2027-02-22",
+   "end": "2027-04-23",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "10"
+  },
+  "s5": {
+   "pillar": 2,
+   "title": "Metric Review and Monitoring",
+   "description": "Track the health of the leadership pipeline and audit how succession management is working.",
+   "prompt": "Which risk measures would tell us early that the pipeline is weak?",
+   "deliverables": [
+    {
+     "t": "Leadership pipeline risk metrics",
+     "done": false
+    },
+    {
+     "t": "Succession audit report",
+     "done": false
+    }
+   ],
+   "start": "2027-04-26",
+   "end": "2027-05-28",
+   "leader": "CMT",
+   "contributors": [],
+   "status": "todo",
+   "ongoing": false,
+   "icon": "11"
+  }
+ },
+ "cards": {},
+ "users": {
+  "u883k1lebmvezwm8h": {
+   "name": "leta"
+  },
+  "ugx98j6simvf5vd2s": {
+   "name": "Leta"
+  }
+ }
+}
