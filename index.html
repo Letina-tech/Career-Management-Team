@@ -130,14 +130,20 @@ main{padding:28px 0 64px}
 .btn[disabled]{opacity:.5;cursor:not-allowed}
 
 .intro{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:24px}
-.intro h1{font-size:clamp(30px,5vw,46px);max-width:16ch}
+.intro h1{font-size:clamp(24px,3.6vw,38px);max-width:24ch}
 .intro p{color:var(--muted);max-width:52ch;margin-top:10px}
 
 /* pillars on overview */
 .pillars{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .pillar{background:var(--surface);border:1px solid var(--line);border-top:8px solid var(--c);border-radius:4px 4px var(--radius) var(--radius);padding:24px;display:flex;flex-direction:column;gap:16px}
 .pillar h2{font-size:24px}
-.pillar .sub{color:var(--muted)}
+.pillar .sub{color:var(--muted);white-space:pre-line}
+.vision{display:flex;gap:14px;align-items:flex-start;margin-top:10px}
+.vision .vimg{width:64px;height:auto;flex:none;display:block}
+.vision p{margin:0}
+.vision .vhead{font:700 13px var(--display);letter-spacing:.09em;color:var(--c);margin-bottom:4px}
+.vision .vtext{color:var(--muted);white-space:pre-line}
+.phead>div:first-child{flex:1 1 420px}
 .meter{height:8px;background:var(--cs);border-radius:99px;overflow:hidden}
 .meter i{display:block;height:100%;background:var(--c);border-radius:99px}
 .meterline{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);margin-top:6px}
@@ -170,7 +176,7 @@ select.status{border:1px solid var(--line);background:var(--surface);border-radi
 /* pillar page */
 .phead{border-top:8px solid var(--c);background:var(--surface);border:1px solid var(--line);border-top:8px solid var(--c);border-radius:4px 4px var(--radius) var(--radius);padding:22px 24px;margin-bottom:20px;display:flex;gap:20px;flex-wrap:wrap;align-items:center;justify-content:space-between}
 .phead h1{font-size:clamp(24px,4vw,34px)}
-.phead p{color:var(--muted);margin-top:6px}
+.phead p{color:var(--muted);margin-top:6px;white-space:pre-line}
 .tasklist{display:grid;gap:14px}
 .taskrow{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:var(--radius);padding:18px 20px;display:grid;grid-template-columns:1fr auto;gap:12px 20px}
 .taskrow h3{font-size:19px}
@@ -294,10 +300,10 @@ label.f input,label.f textarea,label.f select{border:1px solid var(--line);borde
 "use strict";
 /* ---------- constants ---------- */
 const PILLARS = {
-  1: {n:1, cls:'p1', name:'Career Management & Growth Pathway', short:'Growth Pathway',
-      blurb:'Show every employee where they can go next and what it takes to get there.'},
-  2: {n:2, cls:'p2', name:'Succession Planning & Leadership Pipeline', short:'Leadership Pipeline',
-      blurb:'Make sure every critical role has ready successors and a leadership bench that keeps growing.'}
+  1: {n:1, cls:'p1', name:'Career Management & Growth Pathway', short:'Pillar I',
+      blurb:'STRATEGIC VISION \n To give every ethio telecom employee a clear, meaningful, and achievable vision of their career journey within the company; making career growth at ethio telecom more compelling than the career growth everywhere.\n Show every employee where they can go next and what it takes to get there.'},
+  2: {n:2, cls:'p2', name:'Succession Planning & Leadership Pipeline', short:'Pillar II',
+      blurb:'STRATEGIC VISION \n To ensure Ethio Telecom should not be vulnerable to leadership gaps at any critical level - building a deep, diverse, and continuously developed pipeline of leaders who are ready to step into expanded roles at every tier of the organization.\n Make sure every critical role has ready successors and a leadership bench that keeps growing.'}
 };
 const STATUS = {todo:'Not started', doing:'In progress', review:'In review', done:'Done'};
 const KINDS = {idea:'Ideas', concern:'Concerns', resource:'Examples and resources', question:'Questions'};
@@ -322,8 +328,10 @@ const STARTER = [
   ],
   "start": "2026-09-22",
   "end": "2026-10-30",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "H/Michael",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "1"
@@ -346,8 +354,10 @@ const STARTER = [
   ],
   "start": "2026-11-02",
   "end": "2027-01-08",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Redate & Leta",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "2"
@@ -370,8 +380,10 @@ const STARTER = [
   ],
   "start": "2027-01-11",
   "end": "2027-03-05",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Leta",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "3"
@@ -390,8 +402,10 @@ const STARTER = [
   ],
   "start": "2027-03-08",
   "end": "2027-04-30",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "H/Michael",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "4"
@@ -419,8 +433,10 @@ const STARTER = [
   "start": "",
   "end": "",
   "ongoing": true,
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Anteneh",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "icon": "5"
  },
@@ -438,8 +454,10 @@ const STARTER = [
   ],
   "start": "2027-05-08",
   "end": "2027-06-11",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Awol",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "6"
@@ -462,8 +480,10 @@ const STARTER = [
   ],
   "start": "2026-09-22",
   "end": "2026-11-13",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Redate",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "7"
@@ -486,8 +506,10 @@ const STARTER = [
   ],
   "start": "2026-11-16",
   "end": "2026-12-25",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "H/Michael",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "8"
@@ -510,8 +532,10 @@ const STARTER = [
   ],
   "start": "2026-12-28",
   "end": "2027-02-19",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Leta",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "9"
@@ -530,8 +554,10 @@ const STARTER = [
   ],
   "start": "2027-02-22",
   "end": "2027-04-23",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "H/Michael",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "10"
@@ -554,8 +580,10 @@ const STARTER = [
   ],
   "start": "2027-04-26",
   "end": "2027-05-28",
-  "leader": "CMT",
-  "contributors": [],
+  "leader": "Awol",
+  "contributors": [
+   "CMT"
+  ],
   "status": "todo",
   "ongoing": false,
   "icon": "11"
@@ -630,13 +658,13 @@ function logoHero(){
   HERO.innerHTML=logoSvg('hero',true)+
     '<div class="legend" role="group" aria-label="What the letters stand for">'+
     ['c','m','t'].map(k=>`<button type="button" class="k${k}" data-k="${k}"><i>${k.toUpperCase()}</i>${LOGO_WORDS[k][0]}</button>`).join('')+
-    '</div><div class="savebar" hidden><button type="button" class="btn small" data-save="svg">Save logo (SVG)</button><button type="button" class="btn small" data-save="png">Save logo (PNG)</button></div><p class="cap" aria-live="polite"><b></b><span></span></p>';
+    '</div><div class="savebar" hidden></div><p class="cap" aria-live="polite"><b></b><span></span></p>';
   HERO.querySelectorAll('[data-save]').forEach(x=>x.addEventListener('click',e=>{e.stopPropagation();saveLogo(x.dataset.save);}));
   HERO.querySelector('.savebar').hidden=!S.dl;
   const svg=HERO.querySelector('svg'), b=HERO.querySelector('.cap b'), sp=HERO.querySelector('.cap span');
   const show=k=>{
     if(k&&LOGO_WORDS[k]){ b.textContent=LOGO_WORDS[k][0]; sp.textContent=LOGO_WORDS[k][1]; }
-    else { b.textContent='Career Management Team'; sp.textContent='Hover or tap a letter. Click the logo to replay.'; }
+    else { b.textContent='Career Management Team'; sp.textContent='Hover or tap a letter.'; }
     svg.classList.toggle('has-on',!!k);
     svg.querySelectorAll('.lt').forEach(g=>g.classList.toggle('on',g.dataset.k===k));
     HERO.querySelectorAll('.legend button').forEach(x=>x.classList.toggle('on',x.dataset.k===k));
@@ -647,7 +675,7 @@ function logoHero(){
   HERO.addEventListener('mouseleave',()=>show(null));
   HERO.addEventListener('focusin',e=>show(key(e)));
   HERO.addEventListener('focusout',()=>show(null));
-  svg.addEventListener('click',()=>replayLogo(svg));
+  // svg.addEventListener('click',()=>replayLogo(svg));
   svg.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();replayLogo(svg);} });
   replayLogo(svg);
   return HERO;
@@ -786,15 +814,13 @@ function banner(){
   if (!S.booted) return null;
   if (!S.db){
     const nofile=S.reason==='nofile', ps=S.permState||{};
+    if (nofile) return null;
     const needs=Object.values(ps).some(v=>v==='prompt');
     return h('div',{class:'banner',role:'status'},
-      h('span',{},h('b',{},'Preview only. '),
-        nofile ? 'This copy of the page is not running on Claude, so nothing can be saved. Open the shared claude.ai link, or serve this file with the local server (node server.js) and open the address it prints.'
-        : needs ? 'Saved data has not been allowed for this page yet. Choose Allow access and the page will reload.'
-        : "The page cannot reach the team's saved data. Check that you are signed in to Claude with the account the page was shared with, then reload. If it still fails, ask the project owner for access."),
-      !nofile && needs && S.perm && h('button',{class:'btn primary',onclick:async()=>{ try{await S.perm.request();}catch(_){} location.reload(); }},'Allow access'),
-      !nofile && S.perm && h('button',{class:'btn',onclick:()=>{ try{S.perm.manage().catch(()=>{});}catch(_){} }},'Permissions'),
-      !nofile && h('button',{class:'btn',onclick:()=>location.reload()},'Reload'));
+      h('span',{},h('b',{},'Saving is not available right now. '),'Check that you are signed in, then reload.'),
+      needs && S.perm && h('button',{class:'btn primary',onclick:async()=>{ try{await S.perm.request();}catch(_){} location.reload(); }},'Allow access'),
+      S.perm && h('button',{class:'btn',onclick:()=>{ try{S.perm.manage().catch(()=>{});}catch(_){} }},'Permissions'),
+      h('button',{class:'btn',onclick:()=>location.reload()},'Reload'));
   }
   if (S.tasksLoaded && S.tasks.length===0){
     return h('div',{class:'banner',role:'status'},
@@ -813,7 +839,7 @@ function overview(){
   return h('div',{},
     h('div',{class:'intro'},
       h('div',{},
-        h('h1',{},'One project, two pillars'),
+        h('h1',{},'HUMAN & ORGANIZATIONAL DEVELOPMENT OPERATIONAL PLAN '),
         h('p',{},'Each task has a goal, deliverables, a timeline and a team. Open a task to add your ideas, concerns and examples. We combine them into the main plan.'),
         h('button',{class:'btn',style:'margin-top:16px',onclick:exportMd},'Export all responses')),
       logoHero()),
@@ -834,10 +860,19 @@ function overview(){
             h('p',{class:'meta'},personName(c.author)+' · '+KIND_ONE[c.kind]+' on ',h('a',{href:'#/t/'+t.id},t.title),' · '+ago(c.at)));
         })):h('p',{class:'empty'},'No responses yet. Open a task and add the first card.'))));
 }
+const VISION_IMG = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAABnCAYAAADhVHczAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AABkWSURBVHhe7Z0JtFbVdcdP6hhn5gcOcda0q2maoU2tsRWbZtAYTWprjTE1SVlaqi1GIxUtGWpiIonSxBAQDQbFARyIgCJoaApFW6ooyqozPoEyyawiYO3+nXX2Xfvet+83vPd933uYt9f6r/d4955zz92/s/cZ7v0+Qq/1Wq/12rvK3oPenB2O0N+Teq0HWgborTnh9/9vXnjinXnhnahfhW/a46Je6wFmgSi0lzNoSb3R17NMIfwW2vpA+JBA21CEhnY+HM7X81KZXoDdZDloElFDy6AhicSvyHm76fmiXnDdYBbabkCpBA0J2K/KuXuIdqdMKtsLr0Wmjs6gbZ8TLqkGDW2eGf5Wzt9L1AuvxeZC8yB5ev3BcPWi8eH4pbeEY9vvDEevvicctXFGODLV1QuvSWaBRWg75oZve4DqFTNQqetkc41egA20DJxETL8dj4RbPAidFamWus11dll49ga6qq6Y1hEjTVJd/0ZDU5m0aQH2eNOGZpIb6cNiVtLImbIGGvH2r8L1SZNE9xlNYmcCsVaSn3/q1ZdUj9lyEdrOR8J0z+ldldT7b3INJi27xITFOuY9MmD3BZKAAM7iWmZqlcTYAViA0gGK10sqMz2uEbB7s6BJG5fJvf+BXGNPriPqkfC0MVGkBxzbCFDVRP10ijQRsI5Rqdm/cd5uW2aFU7w6u6odD4enHv5R+B25xj6ivUUKTzuMbVe3WOaMFFkntwJWmVI0Xk9bbNsKitBEe6ybHj7h1dMVbZ8bltw1OnxQ6j9QtJ/ovSJd53Vr1FknRGBprFrs3Uh3SXr92MLEQBWhifaUNdefe2U7q9dnh/8YfkY4VuruL+ojOkCkUdet4HLAGLvo5d5N9BQBMEWgQiNlkbr2lr9/yivTGW19MCw875MxPQ4RDRT1ExF1+4qK6bJl4DJgorjx2tMirJJI3exoSNtxHD2f1LXPy7eHT3vn16sVd4ef/+XJ4fekzsNEPQZcBixGmfTg7hrDOiPaajaCcR5i3Nnv2cnhVK9MPXp1Wph05sfDh6Q+nstZcER5EVxLUqVWHqHxTGpXijIk7d0o49xZ0n4iTIUTceb+S28Jp3nlalX71HCL1MOYRjQfLjpUNFg0QGTHuJZNTjJgqNozqZ4ooK2YGv5a2g8kIgxg/IzRds2wcNgbs8NMr2wteubn4btSz3Gio0UabQeLBok0TeqsUtOkBddwy0FjxtgMaOK0pevvD3NINdLzr0b/PSFcjvhdxp9/RZtnhcdkob3cq6NMQFvwk3CStB/n7S8CHj0f7TvmwnDoW3PDv3tlq0mGis3/OS78k9QDtGNEzFzfJzpE1CbSaOO6dkbZtPFNK1Rou739cPiW1/jOCFCAuP+74YunnxA+IvWTYurSvOvD31EHdXnXQNvmhKcnXhbr1ym5wqP377fk5nDCzkfCK17ZagLa3B+Gv5d6qkEjRRYnJU1Jk02BJg7ahKMnXBo+J3XifG7YUwdISd65UdRJZNpofPOh8Mx1w8MfyXEmCJqyMnjVoJEBXpoSfvzCbeEnz98ablDxbyn7vfGXhDOkHq5fC7SyFNlwaFQcodXzINETwHBqlcji5muVV151zBM3hm9smBEeOnto+ID8W8canEnUMbs7aNH4cCIp1GsveuWOMFbOoz7AvL+g40X8neN2TKsGrWkTkoZCKwDTG80cnMSNI2ZiKnqvJ3uOlrNAVVqHzuwUHA7tJ206rRI0iapvy3nUQV0Kz0rbzzlco9g5itCaPou04HZbe1/4SGcnIkwiRp0bhko99mb1hi0oHHzE5MmTT3300UeHrVq16qZNmzbN3rp168I333zzGcTv/O21116bunz58utmz559NmVS2SLQrE4RqQtwmioHLJ8ahpdBSx3tEjkPGNThdQxtu1d/EZqOaa2D9uuxYYDc4DLvBiupJC3aG45OPfvssz8wZ86cvwLUzp07N73TCQPm008//XWpDwfibBX/1tSFU4mEgavuCaMqQVs8Mb5aBwitTzuGClhav41k3Rk5SKSz1qZPRLAcNFGnnktx88z0pHwxwnLAVqxY8SMiKfm/ITZ27NiPSf2AwqH8xKkKbRDQvDYjA03LAx047zvnlPC7q+4NN8mS4YR0TDsDC2uNMt0VsVP+1kNjS8i7wUri5u/9TviSlFdgNsJiL126dOkl27dvfzX5uiFGtL7wwgv/IPXjSBWwIjDRwHXTww+8NiPavfCG8Hk5DxjAzuCf/6nw25LyH+Q8dvrlb1o3EQYwjTJSI8uLlkHDFBraffa1YWClgdsTN2+m+JoWM2DTpk375ObNmx9Mvm6Yvf322xufffbZ8+QaTDqscGrUhpnhZ16bkazD2sd/PXxUzgOIgosadlo4fssD4QF7/rO/CFwLWHFmKgKYpkY7CWkJNAXHhfZ466HwHdvYajLp0aZFHQsOmzdv3lm1jGFAkPS5YP369eNXrlx55aJFi86QSchQxO8SrV9et27dD15//fVZnIuef/55IlwdqWJy0Gf0l8PhWx8MU7w2Ix5wFqBluuD0cJysARcUy9Ch5TjAijswdhLScmi7y6Ti2HqjTdZDI6WsTY3ZbGvZsmWjq0EDlpx30cUXXwx0UlslkaLQgClTpvB+iUIDljr0QPYdxfEzvPYioKUHnBYavw+e9f1wCpHolUNbZsU9SU2LGmXF1Ng0aFgOmmhPGdv+xWtsmdhXlHIKTVNjnM21t7f/c2LjGsCIJjnXgtGxyZOFF9djIk1ZACNtHTD2onBIJWhEkoGm4GqChlLUaZRVSo1Ng2bB7VHv2MbW0hknhg9LWQstTpErQSPFvfTSSxfLebXAsqoKDmiVNos3zQp3FKCp2uT+h5L2vXJFbX0gXCZlbHpsCTTMQqO37FVvtKVxrQO0GTNm/FlZepQZ5ZKJEyeyvlMYRQd6qgROU+QBvEUljq+07zi+DJpoUD2dNkVdy2aPalo5F4opUrR3pZsuis1XKcOYlIN2wQUXHAecxCln/D2NY5Wgtc2aNesUWVT/zfLly69as2bNtYiJiRxTYDoN17HtwCduDH9cDZqcB/TctZJiZ+Acr2yZXpoS/lDKteyBKKbQYooU7fXc5PAxr3Fl4lGMlGMikkETDcbJiVPOgDZ8+HB6uwts/PjxH6WsB52/jRgxgshWYBZa1c1i1nByXrGzZMBEdIYBI/4iHO2VL9O2OWGylLNR11RwWnEu2vhokNc4T+xBShmdPerm6mBSIONX8ndmpE2iiHOKAqZM8SeUpdZt27bNHzlyJFENKIWl6fEg3hGpBG3ltHClnFfsLEVo2ZqvnqhL6bL4qKap4DTauBihvo/MpJ7yGueJRyZSRqf87DLgjEGbNm26I/k7Z6S8dE7OecDcsWNHezqtg0l940aPHk1EK6g41VetvidcWAaNv0sqYwJkIy0CI12zFiwsJ/jZ/+LPh2O8+sq08Ib4iIeoa3q6tOC42N4TLwtDvEZ5Ytb1hZPi+/maIplKDyKVedHGlF+O47T8WkmgVVrfbdy48Ro5LzfNF7Hgjdpwf7i8EjRZjzImdog0hcY16BjyN41g4BF1g6otB6xoh5SxUdcUcFqhTZPv5QUar1Ge0qTEpkicM3DVqlWjoscLtnDhQvYAc85jPCuDBnyJ0OFyno0yBRZfNdg8M3zDaxsqgcbvbZMmTfqwjXCuJX+PKVeUgZNIHuPV7Yn1opRhTedNUhpmCi6XJuk1XqM8td8ZrpcyuRQpGqC92JqMT0/LsVykidqIwnRKznDkiy++eK6cY6FppAFt30pjMdAeGxfOlPP0Wtk1GX+9tLxo0aIT5TjXUXBtX/1MeL9XvyeuKWVom05SmgYulyZF+1XaZShq8hXhVCmj0RYH+EsvvfSo5IecrV69eowcz0FjWp8O5wxohX1H4GXgxo0IB0s7b/XahEhv6YWgDulRFFN5ulTO1q9fz3ZdDpzokFoX4ohFv5TRra+GT1K0olyaFO1fz2tpPJuSMhptcVb2+OOPfy75IWfz58//ghxXcNGBZdGWdvjjzE4EPI063cIqhca+owON3+M1RXHmuHXr1inpcplJe0h1HcDJ9Z7xruWJ5YiUYbPZgmtY1Flwce0mIjcfUOvCWxz0qpxvx7bokLLxTY7loLEvmQ7ljKcBctxbXB9Uy2YxM0E5l2tYaMXpfj8mPOmSmaVxrgM4Hpx61/MkY+ppUkbTZcPHOYWmaRJw9JIDy2ZnRfHpEzk/m0mKuNH+4vjvJz9kZsa3zJE8qkmHc2Y2mq2j+/JYphI0ObbAQLPSurQTxI6wbNmyL6ZL5kyO5SYnooOXTw3Xedf0tPLuuPXHOEwGw7dEnYLrMjwLjjQZxzfRQV5jPG2aGWbL+aRJnKOO6b958+bbkw8yk8mKfVocHemdx4QhnaPnRXCjzg1HVFpbslmcoGmUZdeaO3fuye3t7bykasfLPgsWLDgpXTZnaa3IuQpuyMu3h2961/W05t5whZRhLCaDNXxZUAQXxzd6tdcYTwlcLk0iD8iWLVsekGM5cN4CPUWmgssibuOMcI3XBsTuRtospoxeI16H8Zb0x3gm/47AVGXg7rrrLj4tmgMn6a/mVxIL4Mhkmi67DE4rAFxuYiLq6zXGE+9eyPmaJnFwvFnGqOSDzEzEcW4E553Hek6OWXA4r1/Zhy/SZrECU0VojLVAo17pOD+VvzF2IVJhreBow+D/+UUY4V3fEy8hSRmuoxOUho1zCo7KAJdNTEQ1g0tjHI7SyCgFZ1JghIZ47SAdzhkL8nSeRnG/F6eEc4vXX3NfuFaOlUJL1UWTNjHN5/4ycE8++eTp6XDOWM7I8Zg9RBHcsjvC6OL1yyRrW9Iy12DoaRm4frWuWdKsUsFFB4sG8NpB8kFmJpIycGVruLSXaTsD41JfUtC2OWG+LLpniSMvkr91gMYWltdxVqxYwcepuD8UwXmz39TBFJqCa/vfu8MPPR94Si8QKbiGzizLwNEb+/FpFq9BRQFYzsd5OXBlQEwkcT4/B3m7F0BmO0qOU2eElmTTF+Vz4IDmjZtpiq/bZAqur7e7k/ZSNdIRv7fpK3m16PEJ8e02xtGG76BUAtefabXXIE/pragspfE7Dkx+yFmKpBw4dlPS4ZzxzE2O1wIuisdBHghMxjde5tFo01TZ1+s0RKsc4370niK4ejaaJ42Mr2+0DFxcw4n6r/tlmOA1yNMLtwVePM2BEw1kdph8kVlKlxZcG0/IPQdiwGMCIeeVggMY76uU1SHXfGXMmDGsNS24PmynpVNylp6s58DV82gnZSHaBzgivHXgnropnO81yhPrJynTARxvEidf5Cw5JkabKKY6tsLSYdfeeOONmTwhSLO9/uwzskhnAe89IbfGIlvKcF+qGG3UmU7JjI5FtpDjOXA8XfDu3VN6u7ml4LJUyZrIa5Sn1MM6gCMSkj9yllKggkOMT0OqvbrXGVuzZg3rKSIVJwIM9VmyZMln0yk548m7HKdNOXDMXr1797R2erhRyii4lo5xOL+NGaPXME8ppys4ftLwtg0bNtyZfJKzwqt4ERx67rnn/jGd0iVjMpJ2SrRNCq/PqFGjjuD1h3RqzngbTc7pAK6e8S19UISyLQXHGBDBrZ8R7vIa5imlyyK4QYxfySc5IyWZ/UidGUZ406dP/4Q3PtZqzApT3db5Okb29TaWsbSzQ1sUHOX615MmyT58viCVJ7qbthygoiI4bnCQTGlr/nQOm9JTroyvLyg4Gh6jae3atTcm3+SMyUQaTxRcBg+ROusBCDDGvPTmGNem8yDtUP0YJ9PpOaMjpWijLZTJwLFm9O7ZU9oC5D4oC7im7ZwoOEI52/ISDaznqS9KW08WXEyX1WaNck6HqEuKMFn7AYT1GXAog/idv3EsvTFGHSrqVHi0JULT7a+i0UnkHK6nZSI01mPevZbpv34WvpbqoTzDThGc+r1LpuCo0IIjN3OzQ177ZZjqNdATUZe+yi/etCiCEw0m/SUfdTAgmDeZXXgiC6UoPceKv2fgmKSUQXM2v7Noq2c9S5pMX7BGPXRgshdZDHAEh0Zbw8GRi8nJhDgNH8wnLr1GlomN4FQW4QAcEZ27ePHiryRfuZYmLBZEEV6tyqCxbPCeVKiRiocNG8aYpOU0Qvs/f2v4knePZeJBq5TT1zfIWgQB4PBt08ARyvQMXcvRY7iRQ6XX1fzIHnHDqTwOyKJOVHXKT/SlbTELsB5RLu5XkkLLogwjfY8bN46v1dVyWYSOPCccWevDZNXtV4VPS1k6GvetM8qmPUhVeO4ERXTIoz8Nw7yGlqmQMm3UxQiqZcpP+nI+ClxNbcwmeW29bExVI9IMtFhWlEVb2SOkMvH9KVKO3Rnq4r51fPNmlA0HVxznuBGczReRlX69kifJ969IOQVHPcBTJw3h3crkw6oGRGAAknJMRIhKfvJv9j/ZXyRaU5GKxqSGCZNpTy7aKn2g3xNj221Xhs9IWd4EoB5vfGvYxERNwWm6pIdkW18ibuzQq78WPu41upJ4/JLqsFEXwSGchxOTP5tuTPmBbKDp+JlFW73Q0Mp7ws1SlvdKGd+oh05P5ycIGj6+qWllgCtLlzTo8LXTwzSv4ZVk4GnUWXj8HIwzq6W2rhodJC0Z4jWNsmir9H0nZeKDnOlbX22atAtvwNk02TBTcMV0yYWzZYHosLP+JHyw3q8WRAmeTZkKDzUNIBMTgKVdFHtNVZegofk/DhdIeX2Lm7ro7DZNksXwbcPBYQrOS5c6u6Rhh8/8XjjHu4Fq4l3HyVfEr7Ytjbyk+GYzC+tKM8JKBixeiTDASqHxuKaej1FZ8R3LUgcf9+K9Uu6Dzkm0NT1Nqik4pOnSnaSIjuTD+d6N1KL0uoEXeUWnRsc+9thjZ/IaBCAAgnTnBPHgFHGcr89IW2jUrfV714h18/luOpTXzmpismY+oWQnJZVmk02xmqNOdBSf0PFuqBaxG5GeJlSCh9TxCsJK4RelZbz6UJtGWWdSI2IWefPl4bNSl35CiXqJNm9Sgj+bEm1qWjkXspMUjToaRgNpKA0+ut4lQlFpb9M63DpYpSDqkVsHwPjkTmejDAHt12PDhVIfKVJnkrS/WrQ1HZymSy/qaCANpcFH8rUYXYWHAGg+oOE5vrPKgPFJ1K4AQwYanz3XD3FyHZ1JemNbU9OkmoKzUadjne5f4gwaHFNmo+AhUiifz04vHynEMpD2eAfxBJ/o4jlhZ1OiFdDMV4FoimTcJ2XrTJJOrjNJG21NNxt1XJgGaMrUdZ1OVIDHDRzFd1Dy4X3vhjsrnjjjdF4Z4FvsHJg5SHz7Dw88OZ/IagQslYHGxKcsReq+ZMvGtqJZeDSAhpSlzGy8Ex3blQlLPcKRKu94I0U2ueq8+F+XAU2/CoRJGp2mmCLp5ApNo61bwBVTpn3kkxvvRBGe9Pqav2Kjp4sskr7R1kLTcU1nkZoiWzohKbMiPJsyi+MdvS8Hj++o7MwOS08RkZz+hw5egShC88Y1oLV8QlJmCg4VUyYN1iWCB4+bPa4rC/XuElFmvhyVe/GgFce1bk2RntmoqwceNwu8GH2r7w33eE7qSSLKSPPSZv3eaNrPvdQCrdtTZNG0EbXCsxOWDJ7oOL6XuSemTwVmvp2dNhNpQKMj6pim0BgmgGY3kXsUNLUiPBoKPHqbhadjHvC4WXqqTZ0ZwJ4QgaTEEmB0ODoe0MgiCo0xzYs0Hdd6FDS1IryyyNPZpq7zuPkO0YdwGI5r1OK9FhFdjLtpDIvtSG2yUUaHI2vQAemIZJNq0HosOKwITyNP4elsk3RCD6WnaurU6AOgjcAohdjodSCgiCz9D5dMdKksMBtldDw6IB2RDknH9KD1yBTpWRGejTxyPjdHz6SH0lM1+nTignOK6RNp74/iv3Dh/4fD4aRVnM/4CAgPDseIXMDr/zNnQNm6i8A0LeoERKPMjmd0SDqmNxHZJaCplcHjphSepk6NPpyh6bMsAnNR2GBp/QrLRpgCI0NolGlqBBr3RMfkHneZ9FhmHjxuCng6aeGmNfpwhgVIBCpAjUKF2AiQWt7CstHlAdOxjCij49koA5qXGncpaGoWngK0454CxAk4owygTmKKEC1IC7OS9Fwtr5GlsOgsXLMIjMxgxzKNskrj2S4JTc2DZ6PPjn1FgDoG4kALEefiZAtTBYgy6TmUsaCo08LSMUxTIsA0LRajjPvgnt5V0KzVCtCmUBxmoxCIGok4WUEqTAu0KD2u5yso6rKwbHRpStQIKwLzouxdaZXg4QwPoEahhYhzLUiE8zUyPelxPZ+yCoo6gUX9XEujywKjXR4wC+1dCw6zN1kNIA4rQsSpFiQORzhfoXrS4xaSRhV1UrfC0nRIG8oi7DcGWNHsTRcBVoOIc3GyhalAK0nPo0wRlI0shVUEptBs29FvpFkHWIAKEccVIVqQClMFiDLpOVqOOirBUmDariK0XhOzDkEexCJIhalSqGWy51pIRVAWVrFdvVZiRUepAy1EC9LCLMqCKaoICtlrFdvRa3VY0Xkq62CVBVBJXlnvGqjXGmCeY608IGXyyqt6rQXmOb5e9VqvdbeF8P9Fvm0E1iWexgAAAABJRU5ErkJggg==";
+function visionBlock(P){
+  const i=P.blurb.indexOf('\n');
+  const head=i>-1?P.blurb.slice(0,i).trim():'', rest=i>-1?P.blurb.slice(i+1).trim():P.blurb;
+  if(!/^strategic vision/i.test(head)) return h('p',{class:'sub'},P.blurb);
+  return h('div',{class:'vision'},
+    h('img',{class:'vimg',src:VISION_IMG,alt:'','aria-hidden':'true'}),
+    h('div',{},h('p',{class:'vhead'},head),h('p',{class:'vtext'},rest)));
+}
 function pillarPanel(n){
   const P=PILLARS[n], ts=tasksOf(n), v=pillarPct(n);
   return h('section',{class:'pillar '+P.cls},
-    h('div',{},h('h2',{},P.name),h('p',{class:'sub'},P.blurb)),
+    h('div',{},h('h2',{},P.name),visionBlock(P)),
     h('div',{},meter(v),h('div',{class:'meterline'},h('span',{},ts.length+' tasks'),h('span',{},Math.round(v*100)+'% complete'))),
     h('ul',{class:'minilist'},ts.map(t=>h('li',{},h('a',{href:'#/t/'+t.id},
       h('span',{class:'t'},t.title),statusPill(t.status))))),
@@ -848,7 +883,7 @@ function pillarView(n){
   const P=PILLARS[n], ts=tasksOf(n), v=pillarPct(n);
   return h('div',{class:P.cls},
     h('div',{class:'phead'},
-      h('div',{},h('h1',{},P.name),h('p',{},P.blurb)),
+      h('div',{},h('h1',{},P.name),visionBlock(P)),
       S.isEditor && S.db && !usingStarter() && h('button',{class:'btn primary',onclick:()=>editTask(null,n)},'Add task')),
     h('div',{style:'margin-bottom:20px'},meter(v),h('div',{class:'meterline'},h('span',{},ts.length+' tasks'),h('span',{},Math.round(v*100)+'% complete'))),
     h('div',{class:'tasklist'},ts.map(taskRow)),
@@ -909,12 +944,10 @@ function taskView(id){
 }
 function cardOff(){
   let title, body;
-  if (!S.db && S.reason==='nofile'){
-    title='The card box is off because this copy of the page cannot save.';
-    body='You opened the page file directly. Run it through the local server: in the VS Code terminal run node server.js and open the address it prints. Or open the shared claude.ai link in your browser.';
-  } else if (!S.db){
-    title="The card box is off because the page cannot reach the team's saved data.";
-    body='Open the shared claude.ai link in your browser, signed in to Claude with the account the page was shared with, then reload.';
+  if (!S.db && S.reason==='nofile') return null;
+  if (!S.db){
+    title='The card box is off because saving is not available right now.';
+    body='Check that you are signed in, then reload the page.';
   } else if (usingStarter()){
     title='The card box is off because no tasks have been added yet.';
     body='An editor needs to click Add tasks in the notice at the top of the page.';
